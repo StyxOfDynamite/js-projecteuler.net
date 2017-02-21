@@ -31,7 +31,7 @@ function primes(factors) {
 }
 
 
-var factors = factorsOf(13195);
+var factors = factorsOf(600851475143);
 var arr = primes(factors);
 
 console.log(arr[arr.length-1]);
