@@ -33,8 +33,6 @@ function factorsToPrimes(factors) {
     return primes;
 }
 
-var primeFactors = factorsToPrimes(factorsOf(600851475143));
-
-primeFactors.sort(function(a, b){return a-b});
-
-console.log(primeFactors[primeFactors.length-1]);
+// Math.max takes the array returned by factorsToPrimes() which is in turn
+// passed an array of factors by factorsOf().
+console.log(Math.max(...factorsToPrimes(factorsOf(600851475143))));
